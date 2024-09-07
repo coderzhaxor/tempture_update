@@ -16,14 +16,19 @@ git clone https://github.com/coderzhaxor/tempture_update.git
 ## Install Dependencies
 Jalankan perintah berikut jika anda berada diluar folder `tempture_update` :
 ```bash
-cd tempture_update && bun run install
+cd tempture_update; bun install; bun run setup
 ```
 
 Namun apabila anda sudah berada di folder `tempture_update` maka cukup jalankan :
 ```bash
-bun run install
+bun install; bun run setup
 ```
+Tunggu Hingga proses install selesai, lalu anda bisa menjalankan project tersebut.
+---
 
 ## Cara menjalankan
 - Pastikan mysql sudah di aktifkan di xampp dengan database yang sudah tersedia dengan nama database `modbus`
-- Dalam folder `tempture_update`, jalankan perintah `bun run dev`.
+- Dalam folder `tempture_update`, jalankan perintah :
+```bash
+bun run dev
+```
