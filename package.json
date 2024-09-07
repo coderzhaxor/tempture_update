@@ -1,0 +1,13 @@
+{
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "scripts": {
+        "dev:frontend": "cd frontend && bun dev",
+        "dev:backend": "cd backend && bun run --hot src/index.ts",
+        "dev": "concurrently \"bun run dev:frontend\" \"bun run dev:backend\"",
+	"install:frontend": "cd frontend && bun install",
+	"install:backend: "cd backend && bun install",
+	"install: "concurrently \"bun run install:frontend\" \"bun run install:backend\" \"bun install\",
+    }
+}
